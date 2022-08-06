@@ -310,11 +310,7 @@
 											name="filter"
 											value="Top-Rated"
 										/><span class="checkmark"></span></label></li>
-									<li><label class="container_radio">Distance<input
-											type="radio"
-											name="filter"
-											value="Distance"
-										/><span class="checkmark"></span></label></li>
+									
 									<li><label class="container_radio">Newest<input 
 											type="radio"
 											name="filter"

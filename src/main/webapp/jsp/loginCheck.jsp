@@ -55,7 +55,7 @@
 						<input type="hidden" name="username" value = "<%=username%>" readonly>
 					<%
 						Cookie cookie = new Cookie("nyufoodproject"+username,password);
-					    cookie.setMaxAge(60);
+					    cookie.setMaxAge(400);
 					    cookie.setPath("/");//share to other website
 					    response.addCookie(cookie);
 						response.sendRedirect("../index.jsp?username="+username);

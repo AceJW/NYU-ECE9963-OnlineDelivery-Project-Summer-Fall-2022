@@ -18,7 +18,7 @@
 	name="author"
 	content="Ansonika"
 >
-<title>Foogra - Discover & Book the best restaurants at the best
+<title>NYUFOOD - Discover & Book the best restaurants at the best
 	price</title>
 <!-- Favicons-->
 <link

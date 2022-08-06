@@ -36,11 +36,13 @@
 		<tbody>
 			<%
 			String referer = request.getHeader("Referer");
+			/*
 			if(referer == null) {
 				response.sendRedirect("../html/login2.html");
-			} else if((referer.indexOf("sellerDashboard.jsp")==-1)) {
+			} else if((referer.indexOf("sellerDashboard.jsp")==-1) && (referer.indexOf("accept")==-1)) {
 				response.sendRedirect("../html/login2.html");
 			}
+			*/
 			String restaurant=request.getParameter("restaurant");
 // 			if(restaurant==null) restaurant = "seller1nyu";
 			
@@ -82,13 +84,13 @@
 							<td><%=status%></td>
 							<td><%=foods%></td>
 							<td><%=time%></td>
-							<form method="post" action="rejectOrder.jsp?restaurant=<%=restaurant%>&id=<%=id%>">
+							<form method="post" action="rejectOrder.jsp?restaurant=<%=restaurant%>&id=<%=id%>&username=<%=request.getParameter("username")%>">
 							<td class="text-right">
 								<!-- <button class="button tiny">View User</button> -->
 								<button class="button alert tiny">Reject</button>			
 							</td>
 							</form>
-							<form method="post" action="acceptOrder.jsp?restaurant=<%=restaurant%>&id=<%=id%>">
+							<form method="post" action="acceptOrder.jsp?restaurant=<%=restaurant%>&id=<%=id%>&username=<%=request.getParameter("username")%>">
 							<td class="text-right">
 								<!-- <button class="button tiny">View User</button> -->
 								<button class="button alert tiny">Accept</button>			

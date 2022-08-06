@@ -18,7 +18,7 @@
 		try {
 			String id = request.getParameter("id");
 			String restaurant = request.getParameter("restaurant");
-			
+			String username = request.getParameter("username");
 			//Get the database connection
 			ApplicationDB db = new ApplicationDB();	
 			Connection con = db.getConnection();
@@ -39,7 +39,7 @@
 		
 			con.close();
 			
-			response.sendRedirect("sellerHasOrder.jsp?username="+request.getParameter("restaurant"));
+			response.sendRedirect("sellerHasOrder.jsp?restaurant="+restaurant+"&username="+request.getParameter("username"));
 		
 			//Close the connection. Don't forget to do it, otherwise you're keeping the resources of the server allocated.
 			con.close();

@@ -172,7 +172,7 @@
 							<div class="dropdown-menu-content">
 								<ul>
 									<li><a href="jsp/sellerHasOrder.jsp?restaurant=<%=restaurantName%>&username=<%=username%>"><i class="icon_document"></i>orders</a></li>
-									<li><a href="jsp/userReservation.jsp?username=<%=username%>"><i class="icon_document"></i>Reservations</a></li>		
+									<li><a href="jsp/sellerReservation.jsp?username=<%=username%>"><i class="icon_document"></i>Reservations</a></li>		
 									<% 
 									if(username!=null){
 									%>	<li><a href="jsp/logOut.jsp"><i class="icon_key"></i>Log out</a></li>
