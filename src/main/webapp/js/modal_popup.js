@@ -1,0 +1,9 @@
+(function(a){
+/*
+     * jQuery Cookie Plugin v1.4.1
+     * https://github.com/carhartl/jquery-cookie
+     *
+     * Copyright 2006, 2014 Klaus Hartl
+     * Released under the MIT license
+     */
+(function(b){if(typeof define==="function"&&define.amd){define(["jquery"],b)}else{if(typeof exports==="object"){module.exports=b(require("jquery"))}else{b(jQuery)}}}(function(b){var g=/\+/g;function e(j){return c.raw?j:encodeURIComponent(j)}function d(j){return c.raw?j:decodeURIComponent(j)}function i(j){return e(c.json?JSON.stringify(j):String(j))}function f(k){if(k.indexOf('"')===0){k=k.slice(1,-1).replace(/\\"/g,'"').replace(/\\\\/g,"\\")}try{k=decodeURIComponent(k.replace(g," "));return c.json?JSON.parse(k):k}catch(j){}}function h(k,j){var l=c.raw?k:f(k);return b.isFunction(j)?j(l):l}var c=b.cookie=function(o,w,r){if(arguments.length>1&&!b.isFunction(w)){r=b.extend({},c.defaults,r);if(typeof r.expires==="number"){var m=r.expires,v=r.expires=new Date();v.setMilliseconds(v.getMilliseconds()+m*86400000)}return(document.cookie=[e(o),"=",i(w),r.expires?"; expires="+r.expires.toUTCString():"",r.path?"; path="+r.path:"",r.domain?"; domain="+r.domain:"",r.secure?"; secure":""].join(""))}var u=o?undefined:{},k=document.cookie?document.cookie.split("; "):[],n=0,p=k.length;for(;n<p;n++){var s=k[n].split("="),q=d(s.shift()),j=s.join("=");if(o===q){u=h(j,w);break}if(!o&&(j=h(j))!==undefined){u[q]=j}}return u};c.defaults={};b.removeCookie=function(j,k){b.cookie(j,"",b.extend({},k,{expires:-1}));return !b.cookie(j)}}));setTimeout(function(){a(".popup_wrapper").css("opacity","1")},500);a(".popup_wrapper");a(".popup_close").click(function(){a(".popup_wrapper").fadeOut(300);a.cookie("cookie_popup","monster",{expires:7,path:"/"})});if(typeof a.cookie("cookie_popup")==="undefined"){a(".popup_wrapper").removeClass("cookie_popup")}else{a(".popup_wrapper").addClass("cookie_popup")}})(window.jQuery);

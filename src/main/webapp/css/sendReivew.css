@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+  background-color: #9d61c7;
+}
+
+.page--popup {
+  position: fixed;
+  width: 100%;
+  max-width: 400px;
+  padding: 48px 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+  transition: 0.3s all ease;
+}
+.page--popup .popup--title {
+  color: #9d61c7;
+  font-weight: bold;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.page--popup .popup--subtitle {
+  color: grey;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.page--popup .popup--note {
+  font-size: 12px;
+  line-height: 18px;
+}
+.page--popup a.btn.button {
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
+  text-transform: none;
+  font-weight: normal;
+}

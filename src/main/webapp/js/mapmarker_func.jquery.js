@@ -1,0 +1,1 @@
+function initMap(){var a={markers:[{latitude:"51.511732",longitude:"-0.123270",icon:"img/map-marker.png"}]};$("#map_detail").mapmarker({zoom:14,center:"Covent Garden London",markers:a})};
